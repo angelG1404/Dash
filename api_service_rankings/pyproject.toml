@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "api-service-rankings"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "ipykernel>=7.3.0",
+    "pandas>=3.0.5",
+    "uvicorn[standard]>=0.52.3",
+]
+
+[tool.setuptools]
+py-modules = ["api"]
